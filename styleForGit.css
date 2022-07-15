@@ -4,33 +4,35 @@ body{
 	background-repeat:no-repeat;
 	background-size:cover;
 	color: #99D9EA;
-	font-family: consolas;
 	overflow-y: auto;
 	position: absolute;
 }
 
-table {
-  font-family: consolas;
-  color: 99D9EA;
-  font-size: 100%;
+::-webkit-scrollbar {
+  background: #1F1F1F; 
+  color: #99D9EA;
 }
 
-td, th {
-  text-align: left;
-  padding: 1%;
-  width: 100%;
+::-webkit-scrollbar-thumb {
+  background: #99D9EA; 
+  color: #99D9EA;
+  border-radius: 10px;
 }
 
 .eu{
 	width: 100%;
 	margin-bottom: 5%;
 }
+#icons{
+	font-size: 90%;
+}
 
-#outter{
+#outer{
 	position:relative;
-    width:98.5%;
+    width:98%;
     height:auto;
 	top: 1%;
+	background-color:none;
 }
 
 #content{
@@ -40,9 +42,9 @@ td, th {
     height: 100%;
 }
 
-#outters{
+#outers{
 	position:relative;
-    width:100%;
+    width:98%;
 	float:left;
 }
 
@@ -52,24 +54,21 @@ td, th {
 }
 
 #extra{
-	width: auto;
-	background:#99D9EA;
+	width: 98%;
+	background:#000000;
 	padding: 1%;
 	font-family: arial;
 	color: black;
+	float: left;
 }
 
-#extraa{
-	width: auto;
+#extra2{
+	width: 98%;
 	background:#000000;
 	padding: 1%;
+	font-size: 150%;
 }
 
-@media only screen and (max-width: 1000px){
-	#data, #education{
-		display: block;
-	}
-}
 #data{
 	width: 20%;
     height: 100%;
@@ -77,10 +76,11 @@ td, th {
     background:#000000;
 	float: left;
 	padding: 1%;
-	font-size: 70%;
+	font-size: 90%;
+	margin-bottom: 1%;
 }
 #education{
-	width: 100%;
+	width: 98%;
     height: 60%;
     position: relative;
     background:#000000;
@@ -90,13 +90,25 @@ td, th {
 	margin-top: 1%;
 }
 #experience{
-	width: 100%;
+	width: 98%;
     height: 35%;
     position: relative;
     background:#000000;
 	padding: 1%;
 	font-size: 100%;
 	overflow: auto;
+}
+
+#skills{
+	width: 98%;
+    height: 20%;
+    position: relative;
+    background:#000000;
+	padding: 1%;
+	font-size: 100%;
+	overflow: auto;
+	margin-top: 1%;
+	margin-bottom: 1%;
 }
 
 #worker{
@@ -121,8 +133,30 @@ button{
 	font-family: consolas;
 	font-size: 100%;
 	border-radius: 30px;
+	color: black;
 }
 
 #mail{
-	color: #99D9EA
+	color: #99D9EA;
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 1080px){
+	#data, #content, #outers{
+		float: none;
+		width: 98%;
+		font-size: 150%;
+	}
+	th, td{
+		width: 35%;
+	}
+	.eu{width: 30%;}
+	#experience, #education{
+		width: 100%;
+		font-size: 75%;
+	}
+	#info{
+		float: right;
+		font-size: 75%;
+	}
 }
